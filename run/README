@@ -1,0 +1,19 @@
+THESE INSTRUCTIONS ARE PRIMARILY INTENDED FOR LINUX PLATFORMS
+
+To create simulation input files use program init.py or edit input files manually.
+
+In initialization program init.py you can edit object list, object orbital parameters, and simulation configuration settings.
+Edit the file in your preferred text editor.
+
+To run the initialization program init.py open folder in console and type: python3 init.py
+
+config.txt parameters in order (it is recommended to create the file through init.py):
+1. Number of objects; 2. Index of units (1=m|s|kg, 2=au|day|kg, 3=pc|year|M_sol); 3. Index of center object (0=center of mass); 
+4. Simulation duration in chosen units; 5. Number of simulation steps; 
+6. Step interval of console outputs; 7. Step interval of position file saves
+
+To run simulation open folder in console and type: ./simulation
+    NOTE! If the expected output file size exceeds one gigabyte, the program will ask for permission to proceed.
+
+To plot the simulation run plot.py by opening the folder in console and typing: python3 plot.py
+    NOTE! To get object names correct in the plot do initialization through init.py or edit target_sequence.txt manually.

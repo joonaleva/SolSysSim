@@ -1,0 +1,8 @@
+THESE INSTRUCTIONS ARE PRIMARILY INTENDED FOR LINUX PLATFORMS AND UTILIZE GNU GFORTRAN
+
+To compile the source code open the folder in console and type: make
+To clean the folder after compilation type: make clean
+    NOTE! This will also delete the created simulation program file!
+
+If the make script does not work you can also compile manually by typing: 
+gfortran -O3 -o simulation constants.f90 vectors.f90 simulation.f90
